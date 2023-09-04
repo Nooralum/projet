@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../css file/connexion.css"> -->
+    <title>Connexion</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../images/backimage.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        section{
+            display: flex;
+            width: 100%;
+            max-width: 600px;
+            background-color: #000000;
+            border-radius: 5px;
+        }
+
+        section .box{
+            flex-grow: 1;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        section .box:nth-child(1){
+            background-color: #fff;
+            border-radius: 5px 0px 0px 5px;
+        }
+        section .box:nth-child(2){
+            background-color: #CF6D6D;
+            border-radius: 0px 5px 5px 0px;
+            display: flex;
+            align-items: center;
+        }
+
+        form, .group{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 0.5em;
+        }
+
+        form{
+            gap: 1em;
+            padding: 20px;
+        }
+
+        form h3{
+            text-align: center;
+        }
+
+        .group{
+            padding: 20px;
+        }
+
+        .group input{
+            width: 100%;
+            border: 2px solid black;
+            border-radius: 5px;
+            outline: none;
+            height: 20px;
+            padding: 10px;
+            height: 20%;
+
+        }
+
+        .group a{
+            align-self: flex-end;
+            text-decoration: none;
+        }
+
+        input[type="submit"]{
+            width: 100%;
+            max-width: 200px;
+            border-radius: 20px;
+            height: 30px;
+            background-color: #000000;
+            color: #CF6D6D;
+            border: none;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+            <form action="">
+                <h3>Se Connecter</h3>
+                <div class="group">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="password" name="" id="" placeholder="password">
+                    <a href="">Mot de passe oublié...?</a>
+                </div>
+               
+                <input type="submit" value="Se connecter" >
+                
+                <p>Pas de compte, veuillez vous <a href="" style="text-decoration: none;">inscrire</a></p>
+            </form>
+        </div>
+        <div class="box">
+            <h3>CruMovies</h3>
+            <p 
+            style="color: #fff; font-size: 20px;"
+            >CruMovies est une application Web de Streaming Chrétien </p>
+        </div>
+    </section>
+    
+</body>
+</html>
